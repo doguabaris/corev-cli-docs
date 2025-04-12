@@ -3,7 +3,7 @@ id: index
 title: Home
 ---
 
-![Image](https://private-user-images.githubusercontent.com/135986694/433080453-b1821770-1263-4a09-b3a1-7d278e9b203b.svg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQ0ODY4NzMsIm5iZiI6MTc0NDQ4NjU3MywicGF0aCI6Ii8xMzU5ODY2OTQvNDMzMDgwNDUzLWIxODIxNzcwLTEyNjMtNGEwOS1iM2ExLTdkMjc4ZTliMjAzYi5zdmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQxMlQxOTM2MTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iNzBlYzU2MzkxN2M2NDRiMzMxNWZiMThlN2QxMzgzZWNmZGViYzFlYzBiNGVmNTYyOTQ5NDNkYTU5NmUyMGJjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.2-bSZKEBGzTOF3acMPgZaOS81gjhcgA1uokeCcaDpZc)
+![Image](https://github.com/user-attachments/assets/e857b10d-693a-4a57-b843-701848a81718)
 
 # Corev-CLI
 
@@ -58,7 +58,7 @@ All configuration files are expected to follow this structure:
 #### 1. Initialize once:
 
 ```bash
-npx corev init --api http://localhost:3000
+corev init --api http://localhost:3000
 ```
 
 This saves your API endpoint to `configs/.corevrc.json`.
@@ -66,31 +66,31 @@ This saves your API endpoint to `configs/.corevrc.json`.
 #### 2. Pull latest config for a project:
 
 ```bash
-npx corev pull <project>
+corev pull <project>
 ```
 
 Example:
 
 ```bash
-npx corev pull atlas
+corev pull atlas
 ```
 
 #### 3. Push local config file:
 
 ```bash
-npx corev push configs/atlas@1.0.1.json
+corev push configs/atlas@1.0.1.json
 ```
 
 #### 4. Diff two config files:
 
 ```bash
-npx corev diff configs/atlas@1.0.0.json configs/atlas@1.0.1.json
+corev diff configs/atlas@1.0.0.json configs/atlas@1.0.1.json
 ```
 
 #### 5. List versions (based on filenames):
 
 ```bash
-npx corev list
+corev list
 ```
 
 ### Testing
