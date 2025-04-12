@@ -5,7 +5,7 @@ const config = {
 	baseUrl: '/corev-cli-docs/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
-	favicon: 'img/favicon.ico',
+	favicon: 'img/favicon.svg',
 	organizationName: 'doguabaris',
 	projectName: 'corev-cli-docs',
 	i18n: {
