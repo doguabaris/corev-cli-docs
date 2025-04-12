@@ -1,0 +1,43 @@
+{
+  "name": "corev-cli-docs",
+  "version": "1.0.0",
+  "description": "Docs for Corev CLI — a minimal tool for managing versioned configuration files.",
+  "keywords": [
+    "corev",
+    "cli",
+    "docs",
+    "config"
+  ],
+  "homepage": "https://github.com/doguabaris/corev-cli-docs#readme",
+  "bugs": {
+    "url": "https://github.com/doguabaris/corev-cli-docs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doguabaris/corev-cli-docs.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Doğu Abaris",
+    "email": "abaris@null.net",
+    "url": "https://doguabaris.bio"
+  },
+  "main": "docusaurus.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "serve": "docusaurus serve",
+    "deploy": "docusaurus deploy"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^3.7.0",
+    "@docusaurus/preset-classic": "^3.7.0",
+    "clsx": "^1.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {}
+}
