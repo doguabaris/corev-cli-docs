@@ -30,7 +30,7 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "serve": "docusaurus serve",
-    "deploy": "docusaurus deploy"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@docusaurus/core": "^3.7.0",
@@ -39,5 +39,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
