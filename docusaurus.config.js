@@ -2,7 +2,7 @@ const config = {
 	title: 'Corev CLI Docs',
 	tagline: 'Versioned configuration made simple',
 	url: 'https://corev.dev',
-	baseUrl: '/corev-cli-docs/',
+	baseUrl: '/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.svg',
