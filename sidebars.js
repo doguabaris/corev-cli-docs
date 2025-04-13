@@ -14,5 +14,7 @@ module.exports = {
 				'commands/list',
 			],
 		},
+		'api-specification',
+		'contributing',
 	],
 };

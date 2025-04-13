@@ -35,7 +35,8 @@ const config = {
 			title: 'Corev CLI Docs',
 			logo: {
 				alt: 'Corev CLI Logo',
-				src: 'img/corev-logo.svg',
+				src: 'img/corev-logo-light.svg',
+				srcDark: 'img/corev-logo-dark.svg',
 			},
 			items: [
 				{
