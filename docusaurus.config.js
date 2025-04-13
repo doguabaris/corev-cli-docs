@@ -46,7 +46,7 @@ const config = {
 			],
 		},
 		footer: {
-			copyright: `© ${new Date().getFullYear()} Doğu Abaris. Corev is MIT licensed.`,
+			copyright: `© ${new Date().getFullYear()} Doğu Abaris — Corev CLI is open-source software licensed under the MIT License.`,
 		},
 	},
 };
