@@ -30,7 +30,7 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "serve": "docusaurus serve",
-    "deploy": "docusaurus deploy",
+    "deploy": "gh-pages -d build",
     "lint:svg": "svglint --ci static/**/*.svg",
     "minify:svg": "svgo  --config=.svgo.config.js --recursive --folder ./static",
     "lint": "eslint ./ --ext .js",
