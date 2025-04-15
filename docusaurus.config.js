@@ -2,7 +2,7 @@ const config = {
 	title: 'Corev CLI Docs',
 	tagline: 'Versioned configuration made simple',
 	url: 'https://corev.dev',
-	baseUrl: '/',
+	baseUrl: '/docs/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.svg',
@@ -19,7 +19,7 @@ const config = {
 			({
 				docs: {
 					path: 'docs',
-					routeBasePath: '/',
+					routeBasePath: '/docs',
 					sidebarPath: require.resolve('./sidebars.js'),
 					editUrl: 'https://github.com/doguabaris/corev-cli-docs/edit/main/',
 				},
