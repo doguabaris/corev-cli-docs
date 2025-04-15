@@ -16,7 +16,7 @@ import ThemedImage from '@theme/ThemedImage';
 
 # Corev-CLI
 
-A minimal, open-source CLI tool for managing dynamic configuration repositories, with a focus on JSON files, on a per-project basis — and a proof-of-concept implementation of the [Internet-Draft on JSON-Based Dynamic Configuration Management](https://www.ietf.org/staging/draft-abaris-json-based-dynamic-config-management-00.txt). It is built to pull, push, diff, and list config files across distributed environments, and is ideal for systems where configurations are dynamic and need to be easily maintainable, versioned, and auditable.
+A minimal, open-source CLI tool for managing dynamic configuration repositories, with a focus on JSON files, on a per-project basis — and a proof-of-concept implementation of the [Internet-Draft on JSON-Based Dynamic Configuration Management](https://www.ietf.org/staging/draft-abaris-json-based-dynamic-config-management-00.txt). It is built to pull, push, diff, list, and revert config files across distributed environments, and is ideal for systems where configurations are dynamic and need to be easily maintainable, versioned, and auditable.
 
 [![Product Hunt](https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=952597&theme=dark)](https://www.producthunt.com/posts/corev-cli?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-corev-cli)
 
@@ -39,13 +39,14 @@ npm i -g @corev/cli
 
 Corev-CLI provides a small set of core commands to help you get things done. Files are stored in the `configs/` folder for quick and offline access.
 
-| Action              | Description                                           |
-|---------------------|-------------------------------------------------------|
-| `init`              | Set the API endpoint used by the CLI                  |
-| `pull`              | Fetch the latest config for a project                 |
-| `push`              | Upload a local config file to the server              |
-| `diff`              | Show differences between two config versions          |
-| `list`              | List all available config versions by filename        |
+| Action   | Description                                           |
+|----------|-------------------------------------------------------|
+| `init`   | Set the API endpoint used by the CLI                  |
+| `pull`   | Fetch the latest config for a project                 |
+| `push`   | Upload a local config file to the server              |
+| `diff`   | Show differences between two config versions          |
+| `list`   | List all available config versions by filename        |
+| `revert` | Revert the remote configuration to a previous version |
 
 ## Quick start
 
@@ -79,6 +80,12 @@ corev diff configs/atlas@1.0.0.json configs/atlas@1.0.1.json
 
 ```bash
 corev list
+```
+
+### 6. Revert to an older configuration:
+
+```bash
+corev revert <project> <version>
 ```
 
 ## API specification

@@ -12,6 +12,7 @@ module.exports = {
 				'commands/diff',
 				'commands/init',
 				'commands/list',
+				'commands/revert',
 			],
 		},
 		'api-specification',
